@@ -1,61 +1,86 @@
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Animated WebPage</title>
-      <link rel="stylesheet" href="landing.css" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
-        rel="stylesheet"
-      />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-      <script
-        type="module"
-        src="https://unpkg.com/@splinetool/viewer@1.8.9/build/spline-viewer.js"
-      ></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated WebPage</title>
+    <link rel="stylesheet" href="landing.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.8.9/build/spline-viewer.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Background -->
+    <spline-viewer
+      class="background"
+      url="https://prod.spline.design/jUzm8r8uGU4eMcxz/scene.splinecode"
+    ></spline-viewer>
 
-      
-    </head>
-    <body>
-      <spline-viewer
-        class="background"
-        url="https://prod.spline.design/jUzm8r8uGU4eMcxz/scene.splinecode"
-      ></spline-viewer>
-      <nav class="navbar">
-        <h1 class="logo">Logo</h1>
-        <ul class="menu">
-          <li>Home</li>
-          <li>About</li>
-          <li>Start Bidding</li>
-        </ul>
-        <button class="btn1">Login</button>
-      </nav>
-      <main class="mainarea">
-        <h1 class="text1">A New Way To Auction.</h1>
-      </main>
-      <div class="login-form">
-        <form class="form">
-          <h2>Login</h2>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required />
-          <label for="password">Password</label>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <h1 class="logo">Logo</h1>
+      <ul class="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Start Bidding</li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main class="main-section">
+      <h1 class="text1">A New Way To Auction.</h1>
+    </main>
+
+    <!-- Login and Signup Section -->
+    <section class="auth-section">
+      <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+          <label for="signup-email">Email:</label>
+          <input type="email" id="signup-email" placeholder="Enter email" required />
+          <br />
+          <label for="signup-password">Password:</label>
           <input
             type="password"
-            id="password"
-            name="password"
-            placeholder="Enter your password"
+            id="signup-password"
+            placeholder="Enter password"
             required
           />
-          <button type="submit" class="btn-submit">Login</button>
-          <p class="signup-link">
-            Don't have an account? <a href="#">Sign up here</a>
-          </p>
+          <br />
+          <button type="submit">Sign Up</button>
         </form>
-      </div>      
-    </body>
-  </html>
+      </div>
+
+      <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="login-email">Email:</label>
+          <input type="email" id="login-email" placeholder="Enter email" required />
+          <br />
+          <label for="login-password">Password:</label>
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Enter password"
+            required
+          />
+          <br />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </section>
+    </footer>
+  </body>
+</html>
