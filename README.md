@@ -60,7 +60,7 @@ npm start
 ### Backend Setup
 
 ```bash 
-cd backend
+cd auction-backend
 pip install -r requirements.txt
 python app.py
 ```
