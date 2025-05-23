@@ -62,5 +62,9 @@ npm start
 ```bash 
 cd auction-backend
 pip install -r requirements.txt
-python app.py
+python server.py
+python client.py
+python client2.py
 ```
+(If you want to emulate bidding)
+
